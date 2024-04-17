@@ -1,0 +1,439 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(img/para3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#08ffe6,#fcd200);
+    transform: translate(-490px,-150px);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#fcd200,#fc002e);
+    transform: translate(490px,170px);
+}
+
+.container .ball-1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #04f504;
+    transform: translate(-250px,200px);
+    position: absolute;
+}
+.container .ball-2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #08e2ff;
+    transform: translate(-10px,-220px);
+    position: absolute;
+}
+.container .ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffc404;
+    transform: translate(150px,250px);
+    position: absolute;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0,20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255,0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+}
+.container .box nav{
+    height: 10%;
+    width: 98%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.container .box nav ul li a{
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .box nav ul li a:hover{
+    color: #ffc404;
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.contains {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+   
+}
+
+.contains .section-1 {
+    max-width: 44rem;
+}
+
+.contains .section-1  h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: .3;
+}
+
+.contains .section-1  h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+
+}
+.contains .section-1  .main{
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.contains .section-1  p {
+    font-size: 1.6rem;
+    color: #754ef9;
+}
+.contains .section-1  p i{
+    border: 2px solid #754ef9;
+    box-shadow:0 .2rem .5rem #fff ;
+    font-size: 2rem;
+}
+.contains .section-2{
+    margin: 0rem 0rem -20rem -31rem;
+}
+.contains .section-2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #754ef9;
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem #fdfdfd;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.contains .section-2 a:hover {
+    background: #754ef9;
+    color: #000;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: url(img/para4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 120vh;
+}
+
+.about-img img {
+    width: 34vw;
+    height: 32vw;
+    padding: 10px;
+}
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.about-content h2 {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    margin: 1rem 0 3rem;
+    text-align: justify;
+    padding-right:20px ;
+}
+
+span {
+    color: #754ef9;
+}
+.education {
+    background: url(img/para5.jpg);
+    background-attachment: fixed;             
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.education .qoute {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    font-family: "Nunito" sans-serif;
+}
+
+.education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education .box-container .box {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30vh;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+    background: rgb(252, 252, 252);
+}
+
+.education .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.education .box-container .box .image {
+    flex: 1 1 20rem;
+    width: 100%;
+}
+
+.education .box-container .box img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 1 1 70rem;
+}
+
+.education .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #754ef9;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.education .box-container .box .content p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-align: left;
+    color: black;
+}
+
+.education h4 {
+    font-size: 2rem;
+    color: rgb(34, 109, 0);
+    text-align: left;
+    margin: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.portfolio{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: url(img/para6.jpg);
+    background-size: cover;
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio .portfolio-container{
+    margin-top: -2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), #754ef9);
+    color: #754ef9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+    opacity: 1;
+}
+
+.portfolio-layer h4{
+    font-size: 2.5rem;
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: white;
+    border-radius: 50%;
+}
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact{
+    background: url(img/para7.jpg);
+    background-size: cover;
+    width: 100%;
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #000;
+    background: white;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem black;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+    color: #754ef9;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 4%;
+    background: #fff;
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: #754ef9;
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #754ef9;
+    border-radius:.8rem;
+    border: .2rem solid #fff;
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    outline-color: #754ef9;
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #333;
+
+}
